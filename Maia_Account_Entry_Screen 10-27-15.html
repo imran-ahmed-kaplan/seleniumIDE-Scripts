@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://c.cs14.visual.force.com/" />
+<title>Maia_Account_Entry_Screen 10-27-15</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Maia_Account_Entry_Screen 10-27-15</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeLocation</td>
+	<td>i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{ var x =storedVars['i'].split(&quot;.com&quot;); storedVars['i']=x[0];}</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${i}.com/apex/kap_aoc_AccountEntry</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${i}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeFirstName</td>
+	<td>//div[@class='pbSubheader brandTertiaryBgr first tertiaryPalette']/../div[@class='pbSubsection']//*[contains(text(),'First Name')]/../../td[1]//input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeLastName</td>
+	<td>//div[@class='pbSubheader brandTertiaryBgr first tertiaryPalette']/../div[@class='pbSubsection']//*[contains(text(),'Last Name')]/../../td[1]//input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[text()='Lead Source']/../../td[2]//select</td>
+	<td>label=Yellow Pages</td>
+</tr>
+<tr>
+	<td>typeRandomEmail</td>
+	<td>//*[contains(text(),'Contact Information')]/../..//*[text()='Email']/../../td[1]//input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[text()='Phone']/../../td[2]//input</td>
+	<td>2120001111</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[text()='Interests']/../..//*[contains(text(),'Expected Prep Start Date')]/../..//td[1]//input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Today</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[text()='Address Information']/../..//*[contains(text(),'Billing Street')]/../../td[1]//textarea</td>
+	<td>395 hudson st</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[text()='Address Information']/../..//*[contains(text(),'Billing City')]/../../td[1]//input</td>
+	<td>New York</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[text()='Address Information']/../..//*[contains(text(),'Billing State')]/../../td[1]//select</td>
+	<td>label=New York</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[text()='Address Information']/../..//*[contains(text(),'Billing Zip Code')]/../../td[1]//input</td>
+	<td>10014</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[text()='Address Information']/../..//*[contains(text(),'Billing Country')]/../../td[1]//select</td>
+	<td>label=United States of America</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Lookup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//label[text()='Program Of Interest']/../../td[2]/select</td>
+	<td>label=GMAT</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//label[text()='Shipping Street']/../..//td[2]/textarea</td>
+	<td>750 3rd ave</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//label[text()='Shipping City']/../../td[2]/input</td>
+	<td>New York City</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//label[text()='Shipping State']/../../td[2]/select</td>
+	<td>label=New York</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//label[text()='Shipping Zip Code']/../../td[2]/input</td>
+	<td>10017</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//label[text()='Shipping Country']/../../td[2]/select</td>
+	<td>label=United States of America</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//label[text()='Graduation Year']/../../td[2]/input</td>
+	<td>2020</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Lookup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td>Popup</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=Popup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=j_id0:form:block:section:j_id28</td>
+	<td>label=New York</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=j_id0:form:block:section:j_id30</td>
+	<td>label=coll_grad</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_id0:form:block:section:j_id32</td>
+	<td>nyu</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=j_id0:form:block:section:j_id33</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Nyu Stern School of Business</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Nyu Stern School of Business</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>title=Salesforce - Unlimited Edition</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

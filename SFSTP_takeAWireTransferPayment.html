@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://c.cs50.visual.force.com/" />
+<title>SFSTP_takeAWireTransferPayment</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SFSTP_takeAWireTransferPayment</td></tr>
+</thead><tbody>
+<tr>
+	<td>click</td>
+	<td>//*[contains(@id,':paymentDetailType:')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[contains(@id,':balancePaymentForm:paymentDetail:tabWire_lbl')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeFirstName</td>
+	<td>//*[contains(@id,':nameOnWire')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{''+Math.floor(Math.random() * (20 - 1+ 1)) + '.' + Math.floor(Math.random() * 100);}</td>
+	<td>randomWTAmount</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[contains(@id,':wireAmount')]</td>
+	<td>${randomWTAmount}</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{''+Math.floor(Math.random() * (20 - 1+ 1))+ Math.floor(Math.random() * 100);}</td>
+	<td>WTnumber</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[contains(@id,':wireNumber')]</td>
+	<td>${WTnumber}${WTnumber}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[contains(@id,':saveAction')]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

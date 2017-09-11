@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://c.cs14.visual.force.com/" />
+<title>Maia_Shipping & CC 01-05-16</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Maia_Shipping & CC 01-05-16</td></tr>
+</thead><tbody>
+<tr>
+	<td>click</td>
+	<td>//label[contains(text(),'Send to a different address')]/../input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeFirstName</td>
+	<td>//input[contains(@id,'shippingFirstName')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeLastName</td>
+	<td>//input[contains(@id,'shippingLastName')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[contains(@id,'shippingLine1')]</td>
+	<td>750 3rd Ave</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(@id,'shippingCountry')]</td>
+	<td>label=United States of America</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[contains(@id,'shippingCity')]</td>
+	<td>New York</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(@id,'shippingState')]</td>
+	<td>label=New York</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[contains(@id,'shippingPostalCode')]</td>
+	<td>10017</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=card_number</td>
+	<td>4111111111111111</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=card_type</td>
+	<td>label=Visa</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=card_expirationMonth</td>
+	<td>label=11 Nov</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(@data-name,'card_expirationYear')]</td>
+	<td>label=2020</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=card_cvn</td>
+	<td>111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[contains(@id,':billingEmail')]</td>
+	<td>imran.ahmed@kaplan.com</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(@id,'billingCountry')]</td>
+	<td>label=United States of America</td>
+</tr>
+</tbody></table>
+</body>
+</html>

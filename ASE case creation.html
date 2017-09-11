@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://c.cs14.visual.force.com/" />
+<title>ASE case creation</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ASE case creation</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[contains(@value,'New Case')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(text(),'Caller Type')]/../..//select</td>
+	<td>Student</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(text(),'Case Origin')]/../../td[4]//select</td>
+	<td>Called 1-800-KAP-TEST</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[contains(text(),'Subject')]/../..//input</td>
+	<td>QA Asset Enabled test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[text() ='Description']/../..//textarea</td>
+	<td>Asset Enabled QA test</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(text(),'Product Line')]/../..//td[2]//select</td>
+	<td>Grad</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=cas5</td>
+	<td>My online resources</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(text(),'Type Detail')]/../../td[2]//select</td>
+	<td>Suspend Online Assets</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(text(),'Resolution Type')]/../..//select</td>
+	<td>Assets Enabled</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=save_close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(text(),'Status')]/../..//select</td>
+	<td>Closed</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@class='pbBottomButtons']//*[contains(@value,'Proceed')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//td[contains(text(),'Enrollment')]/..//a</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://c.cs50.visual.force.com/" />
+<title>SFSTP_take a CC payment</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SFSTP_take a CC payment</td></tr>
+</thead><tbody>
+<tr>
+	<td>click</td>
+	<td>//*[contains(@id,':paymentDetailType:')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[contains(@id,':balancePaymentForm:paymentDetail:tabCredit_lbl')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>900</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(@id,':cardType')]</td>
+	<td>label=VS</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[contains(@id,':cardNumber')]</td>
+	<td>4531943316443572</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[contains(@id,':cardCVV')]</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(@id,':expirationYear')]</td>
+	<td>label=2020</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(@id,':expirationMonth')]</td>
+	<td>label=04 Apr</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{''+Math.floor(Math.random() * (20 - 1+ 1)) + '.' + Math.floor(Math.random() * 100);}</td>
+	<td>random</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[contains(@id,':creditAmount')]</td>
+	<td>${random}</td>
+</tr>
+<tr>
+	<td>typeLastName</td>
+	<td>//*[contains(@id,':lastName')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>typeFirstName</td>
+	<td>//*[contains(@id,':firstName')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{''+Math.floor(Math.random() * (20 - 1+ 1))+ Math.floor(Math.random() * 100);}</td>
+	<td>randomHouseNum</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[contains(@id,':addressLine1')]</td>
+	<td>${randomHouseNum} 3rd Ave</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[contains(@id,':city')]</td>
+	<td>New York</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[contains(@id,':zip')]</td>
+	<td>10014</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(@id,':state')]</td>
+	<td>New York</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>//*[contains(@id,':country')]</td>
+	<td>United States of America</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[contains(@id,':saveAction')]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
